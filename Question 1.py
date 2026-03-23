@@ -1,10 +1,8 @@
 # NAME: HASSAN ADNAN
 # UCID: 30217418
 
-
 from sklearn.datasets import load_breast_cancer
 import numpy as np
-
 
 data = load_breast_cancer()
 
@@ -25,5 +23,5 @@ print("Benign :", class_counts[1])
 
 # Discussion
 
-# The dataset is slightly imbalanced because there are more benign cases than malignant cases.
+# The dataset is slightly imbalanced as there are more benign cases than malignant cases.
 # Class balance matters because a model may favor the larger class, which can make accuracy misleading.

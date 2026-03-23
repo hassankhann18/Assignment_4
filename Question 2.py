@@ -10,7 +10,7 @@ data = load_breast_cancer()
 X = data.data
 y = data.target
 
-# 80/20 train-test split with stratification
+# 80/20 train-test split
 X_train, X_test, y_train, y_test = train_test_split(
     X, y,
     test_size=0.2,
@@ -18,7 +18,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42
 )
 
-# Train decision tree using entropy
+# Using entropy to train model
 dt_model = DecisionTreeClassifier(criterion='entropy', random_state=42)
 dt_model.fit(X_train, y_train)
 
